@@ -1,6 +1,7 @@
 import React from 'react';
 import Menu from '../../assets/menu.svg'
-import Youtube from '../../assets/youtube.svg'
+import Menu from '../../assets/menu.svg'
+import youtubeLogo from '../../assets/youtube.svg';
 import Home from '../../assets/home.svg'
 import Qibla from '../../assets/qibla.svg'
 import Shorts from '../../assets/shorts.svg'
@@ -23,7 +24,7 @@ function Header() {
     <div className="sidebar">
       <div className='logki flex gap-5 w-[90%] m-auto'>
         <img src={Menu} alt="menu" />
-        <img src={Youtube} alt="youtube" />
+        <img src={youtubeLogo} alt="youtube" />
       </div>
       <ul>
         <li className='flex'><img src={Home} alt="" /> <Link to="/">Home</Link></li>
