@@ -1,0 +1,251 @@
+@import "tailwindcss";
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  overflow-y: auto;
+  background: #212121;
+  padding-top: 60px;
+}
+
+.main-content {
+  margin-left: 240px;
+  padding: 20px;
+}
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #212121;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #212121;
+  border-radius: 10px;
+}
+.logki{
+  margin-left: 20px;
+  margin-bottom: 30px;
+  margin-top: -25px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li  {
+  gap: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sidebar li:hover {
+  background-color: #272727;
+  border-radius: 20px;
+}
+.nevabw {
+  color: black;
+}
+.top-bar-container {
+  background-color: #0f0f0f; 
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.search-bar {
+  display: flex;
+  width: 100%;
+  max-width: 700px; 
+  margin-bottom: 10px; 
+}
+
+.search-bar input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #303030;
+  background-color: #121212;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.search-bar .search-button,
+.search-bar .mic-button {
+  background-color: #303030;
+  color: #fff;
+  border: none;
+  padding: 9px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body{
+  background-color: black;
+}
+.nameds{
+  margin-left: 250px;
+}
+.name{
+  width: 80%;
+  margin-left: 270px;
+}
+.search-bar .search-button {
+  margin-left: -1px; 
+}
+
+.search-bar .mic-button {
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.search-bar svg {
+  width: 20px;
+  height: 20px;
+}
+
+.filter-buttons-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%; 
+  overflow-x: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.filter-buttons-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.filter-buttons {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.filter-button {
+  background-color: #272727;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  margin-right: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.filter-button.active {
+  background-color: #fff;
+  color: #0f0f0f;
+}
+
+.scroll-button {
+  background: transparent;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.scroll-button svg {
+  width: 20px;
+  height: 20px;
+}
+.main-content {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  width: 84%;
+  display: flex;
+  justify-content: space-between;
+}
+.search-bar{
+  margin-left: 100px;
+}
+.shaddow{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 250px;
+}
+.salomro{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 400px;
+  margin-left: 370px;
+}
+.textl{
+  margin-left: 350px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .top-bar-container {
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-bar {
+    margin-bottom: 0;
+  }
+
+  .filter-buttons-container {
+    max-width: calc(
+      100% - 720px
+    ); 
+  }
+}
+@media (max-width:1510px){
+  .colorw1{
+    display: none;
+  }
+
+}
+@media (max-width:900px){
+ .nameds{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 94%;
+ } 
+ .colorw2{
+  display: none;
+ }
+ .search-bar{
+  margin-right:100px;
+ }
+}
+@media (max-width:500px){
+  .nameds{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+   } 
+   .sidebar{
+    display: none;
+   }
+   .main-content{
+    margin-left: -80px;
+   }
+   .name{
+    margin-left: 65px;
+   }
+   .nameds{
+    margin-left: 70px;
+   }
+}
+
+@media (min-width: 1200px) {
+  .filter-buttons-container {
+    max-width: calc(100% - 800px); 
+  }
+
+}
