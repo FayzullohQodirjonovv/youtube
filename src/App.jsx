@@ -10,6 +10,7 @@ import Explores from './pages/explores/index'
 import Login from './pages/login/index'
 import Shorts from './pages/shorts/index'
 import Substriction from './pages/substriction/index'
+import Notfound from "./pages/NotFound";
 import { Routes, Route } from "react-router-dom"
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path='/shorts' element={<Shorts/>}/>
         <Route path='/substriction' element={<Substriction/>}/>
         <Route path="/login" element={<Login />} />
+        <Route path="*" element={<Notfound/>}/>
       </Routes>
     </>
   );

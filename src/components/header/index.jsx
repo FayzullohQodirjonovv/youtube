@@ -1,6 +1,5 @@
 import React from 'react';
 import Menu from '../../assets/menu.svg'
-import Menu from '../../assets/menu.svg'
 import youtubeLogo from '../../assets/youtube.svg';
 import Home from '../../assets/home.svg'
 import Qibla from '../../assets/qibla.svg'
